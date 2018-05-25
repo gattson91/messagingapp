@@ -32,7 +32,7 @@ class MessageListViewController: UIViewController, UITableViewDelegate, UITableV
             
             let dictionary = snapshot.value as? [String: Any]
             
-            dictionary?.forEach({ (arg, in
+            dictionary?.forEach({ (arg) in
                 let (key, value) = arg
                 self.messages.append(value as! String)
             })
